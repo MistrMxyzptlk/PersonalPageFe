@@ -1,4 +1,4 @@
-<div class="text">
+<div class="text" [@slideInLeft]="slideIn" (appAppear)="onAppear()">
         <span>
           <h1> Pavel Baštinec </h1>
           <h2> Programátor a Student FIT ČVUT </h2>
@@ -19,4 +19,7 @@
           </button>
         </span>
 </div>
-<img class="avatar" src="./assets/images/avatar/1.png" alt="avatar"/>
+<img src="./assets/images/avatar/1.png"
+     class="avatar" alt="avatar"
+     [@slideInRight]="slideIn"
+     (appAppear)="onAppear()"/>
